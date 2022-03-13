@@ -11,10 +11,12 @@
    <script src="main.js"></script>
 </head>
 
-<body>
-   <div class="bg"></div>
 
-   <header style="height: 10vh; position: fixed;">
+<body>
+   <div class="bg-anim"></div>
+   <div class="bg-color"></div>
+
+   <header style="height: 10vh;">
       <nav class="navbar py-1 is-fixed-top" role="navigation" aria-label="main navigation"
          style="background: transparent;">
          <div class="navbar-brand">
@@ -30,13 +32,13 @@
          </div>
          <div class="navbar-end pr-6">
             <div class="navbar-menu is-right" id="nav-links">
-               <a class="navbar-item has-text-primary is-size-4 pr-6 text-glow">
+               <a class="navbar-item has-text-primary is-size-4 pr-6 text-glow" href="#about">
                   About
                </a>
                <a class="navbar-item has-text-primary is-size-4 pr-6 text-glow" href="#work">
                   My Work
                </a>
-               <a class="navbar-item has-text-primary is-size-4 pr-6 text-glow" href="./contact.html">
+               <a class="navbar-item has-text-primary is-size-4 pr-6 text-glow" href="#contact">
                   Contact
                </a>
             </div>
@@ -45,16 +47,49 @@
    </header>
 
    <!-------------------------------------- MAIN CONTENT ------------------------------------------->
+   <section class="section is-large">
+      <div class="container" id="main">
+         <div class="container" id="landing">
+            <div class="columns is-centered is-narrow">
+               <div class="column ">
+                  <figure class="has-text-centered">
+                     <img src="./assets/landing.png" alt="">
+                  </figure>
+               </div>
+            </div>
+   </section>
 
-   <div class="main pt-6">
-      <section class="section-large">
-         <p>
-            Creating designs for 5 year olds and adults who don't care
-         </p>
-      </section>
+   <section class="section is-large">
+      <div class="container" id="about">
+         <p>hello</p>
+      </div>
 
-      <div class="columns is-multiline is-vcentered" id="work">
-         <div class="column is-half">
+   </section>
+
+   <section class="section">
+      <div class="container" id="work-container">
+         <div class="columns is-multiline is-vcentered" id="work">
+            <div class="column is-half">
+               <a href="./puzzle/index.html">
+                  <div class="tile is-parent">
+                     <article class="tile is-child notification is-info is-2 glow is-vcentered">
+                        <figure class="image is-4by3">
+                           <img class="puzzle" src="./assets/puzzle-gif.gif" alt="Sliding puzzle">
+                           <p class="title is-6 has-text-primary" style="padding-top: 10px; position: center;">
+                              Sliding
+                              Puzzle</p>
+                        </figure>
+                     </article>
+                  </div>
+               </a>
+            </div>
+            <div class="column">
+               <h3 class="title is-3 has-text-primary text-glow">Sliding Puzzle</h3>
+               <p class="has-text-primary">Clunky with Vanilla JS, incomplete with jQuery</p>
+            </div>
+         </div>
+
+         <div class="section" id="skills">
             <a href="./puzzle/index.html">
                <div class="tile is-parent">
                   <article class="tile is-child notification is-info is-2 glow is-vcentered">
@@ -66,55 +101,38 @@
                   </article>
                </div>
             </a>
-         </div>
-         <div class="column">
-            <h3 class="title is-3 has-text-primary text-glow">Sliding Puzzle</h3>
-            <p class="has-text-primary">Clunky with Vanilla JS, incomplete with jQuery</p>
-         </div>
-      </div>
-
-      <div class="section" id="skills">
-         <a href="./puzzle/index.html">
-            <div class="tile is-parent">
-               <article class="tile is-child notification is-info is-2 glow is-vcentered">
-                  <figure class="image is-4by3">
-                     <img class="puzzle" src="./assets/puzzle-gif.gif" alt="Sliding puzzle">
-                     <p class="title is-6 has-text-primary" style="padding-top: 10px; position: center;">Sliding
-                        Puzzle</p>
-                  </figure>
-               </article>
-            </div>
-         </a>
 
 
-         <div class="container">
-            <div class="tile is-parent" style="justify-content: right;">
-               <div class="tile is-child">
-                  <p class="title is-6 has-text-primary"
-                     style="padding-top: 10px; position: center; justify-items: center;">Sliding
-                     Puzzle</p>
+            <div class="container">
+               <div class="tile is-parent" style="justify-content: right;">
+                  <div class="tile is-child">
+                     <p class="title is-6 has-text-primary"
+                        style="padding-top: 10px; position: center; justify-items: center;">
+                        Sliding Puzzle
+                     </p>
+                  </div>
+                  <article class="tile is-child notification is-info is-2 glow">
+                     <figure class="image is-inline-block">
+                        <img class="puzzle" src="./assets/puzzle-gif.gif" alt="Sliding puzzle">
+                     </figure>
+                  </article>
                </div>
-               <article class="tile is-child notification is-info is-2 glow">
-                  <figure class="image is-inline-block">
-                     <img class="puzzle" src="./assets/puzzle-gif.gif" alt="Sliding puzzle">
-                  </figure>
-               </article>
             </div>
          </div>
-      </div>
-   </div>
+   </section>
 
 
-   <section class="section-large">
+   <section class="section-large" id="contact">
+      <div class="container"></div>
       <p>
          Creating designs for 5 year olds and adults who don't care
       </p>
    </section>
+   </div>
 
 
-
-
+   <img class="cat" src="./assets/cat-gif-II.gif" alt="Cat in spaceship">
 </body>
-<img class="cat" src="./assets/cat-gif-II.gif" alt="Cat in spaceship">
+
 
 </html>

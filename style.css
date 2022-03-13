@@ -6,7 +6,7 @@ html {
    scroll-behavior: smooth;
 }
 
-.bg {
+.bg-anim {
    position: fixed;
    bottom: 0;
    width: 100%;
@@ -31,30 +31,16 @@ html {
    20%, 100% { transform: translateX(calc(100vw + 300px)) translateY(100px); }
 }
 
-body {
-   /* position: relative; */
-   height: 100%;
-   width: auto;
-   overflow-x: hidden;
-   overflow-y: hidden;
-   background: linear-gradient(0deg, rgb(2, 0, 22) 66%, rgb(7, 0, 51) 90%, rgb(0, 106, 148) 100vh);
-   background-attachment:fixed;
-}
+
 
 h2, h3 {
    font-family: 'Audiowide', cursive;
    transition: all 0.2s ease-in-out;
 }
 
-/* h3 {
-   font-family: 'Audiowide', cursive;
-   transition: all 0.2s ease-in-out;
-} */
 
 .text-glow:hover {
    text-shadow: 0 0 10px rgb(255, 255, 255);
-   /* text-decoration-color: #51c8e6; */
-   /* border-color: rgb(255, 255, 255); */
    
 }
 
@@ -74,7 +60,28 @@ h2, h3 {
    animation: cat 50s linear infinite;
    animation-fill-mode: forwards;
    animation-delay: 3s;
-   z-index: 6;
+   z-index: 2;
+}
+
+body {
+   position: relative;
+   height: 100%;
+   width: auto;
+   overflow-x: hidden;
+   overflow-y: hidden;
+   background: linear-gradient(0deg, rgb(2, 0, 22) 66%, rgb(7, 0, 51) 90%, rgb(0, 106, 148) 100vh);
+   background-attachment:fixed;
+   font-family: 'Nunito', sans-serif;
+   z-index: 100;
+}
+
+/* .main {
+   z-index: 20;
+} */
+
+.main, .container {
+   background: transparent;
+   z-index: 20;
 }
 
 .puzzle {
@@ -84,23 +91,6 @@ h2, h3 {
    width: 50%;
 }
 
-.section-large {
-   padding: 500px;
-   position: relative;
-   overflow: hidden;
-}
-
-.main, .main p {
-   z-index: 11;
-   position: relative;
-   left: 50%; 
-   transform: translateX(-50%);
-   width: 60%; 
-   background: transparent;
-   font-family: 'Nunito', sans-serif;
-   /* height: 90vh; */
-   /* overflow-y: hidden; */
-}
 
 
 .notification.is-info {
@@ -127,4 +117,8 @@ a.navbar-item, #nav-links {
 a.navbar-item:hover {
    color: rgb(0, 206, 206);
    background-color: transparent;
+}
+
+section {
+   z-index: 50;
 }
