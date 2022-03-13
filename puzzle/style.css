@@ -1,0 +1,17 @@
+body {
+   height: 100rem;
+   width: auto;
+   background: linear-gradient(0deg, rgb(41, 0, 80) 30%, rgb(0, 67, 129) 60%, rgb(0, 204, 78) 100%);
+   /* background-color: rgb(71, 255, 47); */
+   background-size: cover;
+}
+
+.grid-container {
+   display: grid;
+   justify-content: center;
+   grid-template-columns: repeat(4, 149px);
+   grid-template-rows: repeat(4, 149px);
+   gap: 5px;
+   text-align: center;
+   padding: 100px;
+}
