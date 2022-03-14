@@ -16,12 +16,15 @@
 <body>
    <div class="bg-anim"></div>
 
+   <!-- ============================================HEADER & NAVBAR========================================================== -->
+
    <header style="height: 10vh;">
       <nav class="navbar py-1 is-fixed-top" role="navigation" aria-label="main navigation"
          style="background: transparent;">
          <div class="navbar-brand">
             <a class="navbar-item" href=" /">
-               <img src="./assets/rro.png" alt="RRO" class="ml-6 mt-2" style="max-height: 80px; border-radius: 10%;" id="brand-img">
+               <img src="./assets/rro.png" alt="RRO" class="ml-6 mt-2" style="max-height: 80px; border-radius: 10%;"
+                  id="brand-img">
             </a>
             <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbar-content"
                id="burger">
@@ -30,7 +33,7 @@
                <span aria-hidden="true" style="color: #00d1b2!important;"></span>
             </a>
          </div>
-         <div class="navbar-menu" id="nav-links">
+         <div class="navbar-menu is-pulled-right" id="nav-links" style="justify-items: right;">
             <div class="navbar-end mr-6">
                <a class="navbar-item has-text-primary is-size-4 pr-6 text-glow" href="#about">
                   About
@@ -46,9 +49,10 @@
       </nav>
    </header>
 
-   <!-------------------------------------- MAIN CONTENT ------------------------------------------->
+   <!------------------------------------------------- MAIN CONTENT ------------------------------------------------>
+   <!------------------------------------------------- LANDING PAGE ------------------------------------------------>
    <section class="section is-medium">
-      <div class="container" id="main">
+      <!-- <div class="container" id="main"> -->
          <div class="container" id="landing">
             <div class="columns is-centered is-narrow">
                <div class="column ">
@@ -58,33 +62,73 @@
                </div>
             </div>
    </section>
-
-   <section class="section is-large">
-      <div class="container" id="about">
-         <p>hello</p>
+   <!------------------------------------------------------ ABOUT ME + SKILLS ----------------------------------------------------->
+   <section class="section is-large" id="about">
+      <div class="container">
+         <h1 class="title is-1 has-text-primary has-text-centered">I am the Commander of Space Cats</h1>
+         <p class="is-size-3 has-text-centered has-text-warning">
+            Creating things for 5 year olds and adults who will hate it in:
+         </p>
+         <div class="columns my-6">
+            <div class="column">
+               <figure>
+                  <img src="./assets/java-logo.png" alt="">
+               </figure>
+            </div>
+            <div class="column">
+               <figure>
+                  <img src="./assets/c-logo.png" alt="">
+               </figure>
+            </div>
+            <div class="column">
+               <figure>
+                  <img src="./assets/html.png" alt="">
+               </figure>
+            </div>
+            <div class="column">
+               <figure>
+                  <img src="./assets/css.png" alt="">
+               </figure>
+            </div>
+            <div class="column">
+               <figure>
+                  <img src="./assets/js-logo.png" alt="">
+               </figure>
+            </div>
+         </div>
       </div>
-
    </section>
 
-   <section class="section">
-      <div class="container" id="work-container">
-         <div class="columns is-multiline is-vcentered" id="work">
+   <!-- ====================================== WORK =============================================================== -->
+
+   <section class="section is-large" id="work">
+      <div class="container">
+         <h2 class="title is-2 has-text-centered has-text-primary py-6">Things I have made</h2>
+         <div class="columns is-multiline is-vcentered is-centered glow">
             <div class="column is-half">
                <a href="./puzzle/index.html">
-                  <div class="tile is-parent">
-                     <article class="tile is-child notification is-info is-2 glow is-vcentered">
-                        <figure class="image is-4by3">
+                  <div class="card">
+                     <div class="card-image is-centered" style="align-items: center">
+                        <figure class="image is-1x1">
                            <img class="puzzle" src="./assets/puzzle-gif.gif" alt="Sliding puzzle">
-                           <p class="title is-6 has-text-primary" style="padding-top: 10px; position: center;">
-                              Sliding
-                              Puzzle</p>
                         </figure>
-                     </article>
+                     </div>
                   </div>
                </a>
             </div>
+            <div class="column is-half">
+               <div class="card">
+                  <div class="card-content">
+                     <div class="content">
+                        <h3 class="title is-4 has-text-primary">Sliding Puzzle</h3>
+                        <p class="has-text-primary"> Clunky with Vanilla JavaScript, incomplete with jQuery.</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <br>
             <div class="column">
-               <h3 class="title is-3 has-text-primary text-glow">Sliding Puzzle</h3>
+               <h3 class="title is-3 has-text-primary">Sliding Puzzle</h3>
                <p class="has-text-primary">Clunky with Vanilla JS, incomplete with jQuery</p>
             </div>
          </div>
@@ -128,6 +172,7 @@
          Creating designs for 5 year olds and adults who don't care
       </p>
    </section>
+   </div>
    </div>
 
 
