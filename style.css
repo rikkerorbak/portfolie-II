@@ -92,7 +92,6 @@ body {
 }
 
 
-
 .notification.is-info {
    background-color: rgba(136, 255, 225, 0.1);
    border-radius: 5%;
@@ -103,15 +102,21 @@ body {
    
 }
 
+.glow {
+   transition: all 0.2s ease-in-out;
+}
+
 .glow:hover {
    box-shadow: 0 0 30px rgba(255, 255, 255, 0.671);
    border-color: rgb(227, 255, 124);
 }
 
-a.navbar-item, #nav-links {
+.navbar-item, #nav-links {
    font-family: 'Nunito', sans-serif;
    transition: all 0.2s ease-in-out;
    background-color: transparent;
+   position: relative;
+   right: 0;
 }
 
 a.navbar-item:hover {
@@ -122,3 +127,12 @@ a.navbar-item:hover {
 section {
    z-index: 50;
 }
+
+/* .brand-non-hover, #brand-img .brand-hover {
+   display:none;
+}
+
+.brand-hover, #brand-img .brand-non-hover {
+   display: block;
+} */
+
