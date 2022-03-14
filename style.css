@@ -105,8 +105,8 @@ body {
 }
 
 .glow:hover {
-   box-shadow: 0 0 30px rgba(255, 255, 255, 0.671);
-   border-color: rgb(227, 255, 124);
+   box-shadow: 0 0 30px rgba(255, 255, 255, 0.438);
+   border-color: rgb(253, 253, 253);
 }
 
 .navbar-item, #nav-links {
@@ -118,7 +118,7 @@ body {
 }
 
 a.navbar-item:hover {
-   color: rgb(0, 206, 206);
+   color: rgb(255, 255, 255);
    background-color: transparent;
 }
 
@@ -126,6 +126,22 @@ section {
    z-index: 50;
 }
 
+#work .columns .container {
+   background-color: rgba(0, 0, 0, 0.432);
+   border-color: rgba(255, 255, 255, 0.219);
+   border-style: ridge;
+   border-width: thin;
+   margin-top: 30px;
+   margin-bottom: 30px;
+   border-radius: 20px;
+}
+
 .column .card {
    background-color: transparent;
+}
+
+
+.footer {
+   background-color: transparent;
+   padding-bottom: 1rem;
 }
